@@ -1,43 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/** @format */
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html{
-  scroll-behavior: smooth;
+html {
+	scroll-behavior: smooth;
 }
 
-body{
-  font-family: 'Open Sans', sans-serif;
-  color: #423F44;
+body {
+	font-family: "Open Sans", sans-serif;
+	color: #423f44;
 }
 
-.gutter{
-  @apply max-w-[1140px] mx-auto
+.gutter {
+	@apply max-w-[1140px] mx-auto;
 }
 
-.bg-hero{
-  background: url('../assets/dark.png');
+.bg-hero {
+	background: url("../assets/dark.png");
 }
 
-.bg3section{
-  background: url('../assets/bg3section.png');
+.bg3section {
+	background: url("../assets/bg3section.png");
 }
 
-.heading{
-  @apply text-[50px] text-primary font-poppins font-bold leading-[60px];
+.heading {
+	@apply text-[50px] text-primary font-poppins font-bold leading-[60px] uppercase;
 }
 
-.circular{
-  @apply bg-[#E3E3E3] h-[20px] w-[20px] rounded-full 
+.sub-heading {
+	@apply text-[20px] font-bold;
 }
 
-.button{
-  @apply bg-primary font-semibold py-[9px] px-[24px] rounded-[30px]
+.circular {
+	@apply bg-[#E3E3E3] h-[20px] w-[20px] rounded-full;
 }
 
-.bg5section{
-  background: url('../assets/cosmic-background-with-colorful-neon-laser-lights-perfect-digital-wallpaper.png');
+.button {
+	@apply bg-primary font-semibold py-[9px] px-[24px] rounded-[30px];
+}
+
+.bg5section {
+	background: url("../assets/cosmic-background-with-colorful-neon-laser-lights-perfect-digital-wallpaper.png");
+}
+
+.bg7section {
+	background: url("../assets/bg7section.png");
+  object-fit: contain;
+}
+
+.active::before {
+	content: url("../assets/sound_medium.svg");
+	position: absolute;
+	left: 12px;
+	top: 50%;
+	transform: translateY(-39%);
+}
+
+.card{
+  background-color: #F5F5F5;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25) ;
 }
