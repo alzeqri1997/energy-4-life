@@ -1,13 +1,16 @@
-const img1 = document.querySelector('.img1')
-const img2 = document.querySelector('.img2')
+const activeButton = document.querySelector('.active');
+const onButton = document.querySelector('.on');
+const offButton = document.querySelector('.off');
 
-gsap.from(img1, {
-  opacity: 0,
-  x: 100,
-  duration:1
-} )
-gsap.from(img2, {
-  opacity: 0,
-  x: -100,
-  duration:1
-} )
+
+function turnMusic(value) {
+  if (value === 1) {
+    activeButton.style.transform = 'translateX(-100px)' 
+    onButton.style.color = '#fff'
+    offButton.style.color = '#423F44'
+  } else {
+    activeButton.style.transform = 'none'
+    onButton.style.color = '#423F44'
+    offButton.style.color = '#fff'
+  }
+}
