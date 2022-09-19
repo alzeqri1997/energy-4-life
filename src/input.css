@@ -11,9 +11,33 @@ html{
 
 body{
   font-family: 'Open Sans', sans-serif;
+  color: #423F44;
+}
+
+.gutter{
+  @apply max-w-[1140px] mx-auto
 }
 
 .bg-hero{
   background: url('../assets/dark.png');
+}
 
+.bg3section{
+  background: url('../assets/bg3section.png');
+}
+
+.heading{
+  @apply text-[50px] text-primary font-poppins font-bold leading-[60px];
+}
+
+.circular{
+  @apply bg-[#E3E3E3] h-[20px] w-[20px] rounded-full 
+}
+
+.button{
+  @apply bg-primary font-semibold py-[9px] px-[24px] rounded-[30px]
+}
+
+.bg5section{
+  background: url('../assets/cosmic-background-with-colorful-neon-laser-lights-perfect-digital-wallpaper.png');
 }
