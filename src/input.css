@@ -16,7 +16,7 @@ body {
 }
 
 .gutter {
-	@apply max-w-[1140px] mx-auto;
+	@apply max-w-[1100px] px-[20px] mx-auto;
 }
 
 .bg-hero {
@@ -69,4 +69,20 @@ body {
 .bg-form{
 	background: url("../assets/bg.png");
 	background-position: center;
+}
+
+.shown .menu-icon{
+	display: none;
+}
+
+.shown .close-icon{
+	display: inline-block;
+}
+
+.shown .nav{
+	transform: translateX(0);
+}
+
+.fixed-position{
+	@apply fixed z-50
 }
