@@ -43,5 +43,8 @@ const swiper = new Swiper('.swiper', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    bulletActiveClass: "swiper-active",
+    bulletClass: 'swiper-pagination-dots',
+    horizontalClass:"swiper-pagination-dots-horizontal"
   },
 });
