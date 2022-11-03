@@ -6,34 +6,82 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
 		<link rel="stylesheet" href="./style.css" />
-		<title>fix</title>
+		<title>Energy4life</title>
 	</head>
 	<body class="bg-[#F3F3F3] overflow-x-hidden">
-		<header class=" bg-white header w-full">
+		<header class="bg-white header w-full">
 			<div class="gutter">
 				<div class="flex justify-between items-center h-[60px]">
-
-					<button  class="menu-btn md:hidden" >
-						<svg class="menu-icon"  xmlns="http://www.w3.org/2000/svg" width="26" height="20" viewBox="0 0 26 20">
+					<button class="menu-btn md:hidden">
+						<svg
+							class="menu-icon"
+							xmlns="http://www.w3.org/2000/svg"
+							width="26"
+							height="20"
+							viewBox="0 0 26 20"
+						>
 							<g id="menu" transform="translate(0 -58.025)">
-								<path id="Path_500" data-name="Path 500" d="M24.375,351.225H1.625a1.538,1.538,0,1,1,0-3.071h22.75a1.538,1.538,0,1,1,0,3.071Z" transform="translate(0 -273.2)" fill="#423f44"/>
-								<path id="Path_501" data-name="Path 501" d="M24.375,206.161H1.625a1.538,1.538,0,1,1,0-3.071h22.75a1.538,1.538,0,1,1,0,3.071Z" transform="translate(0 -136.601)" fill="#423f44"/>
-								<path id="Path_502" data-name="Path 502" d="M24.375,61.1H1.625a1.538,1.538,0,1,1,0-3.071h22.75a1.538,1.538,0,1,1,0,3.071Z" fill="#423f44"/>
+								<path
+									id="Path_500"
+									data-name="Path 500"
+									d="M24.375,351.225H1.625a1.538,1.538,0,1,1,0-3.071h22.75a1.538,1.538,0,1,1,0,3.071Z"
+									transform="translate(0 -273.2)"
+									fill="#423f44"
+								/>
+								<path
+									id="Path_501"
+									data-name="Path 501"
+									d="M24.375,206.161H1.625a1.538,1.538,0,1,1,0-3.071h22.75a1.538,1.538,0,1,1,0,3.071Z"
+									transform="translate(0 -136.601)"
+									fill="#423f44"
+								/>
+								<path
+									id="Path_502"
+									data-name="Path 502"
+									d="M24.375,61.1H1.625a1.538,1.538,0,1,1,0-3.071h22.75a1.538,1.538,0,1,1,0,3.071Z"
+									fill="#423f44"
+								/>
 							</g>
 						</svg>
-						<svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="20.557" height="20.557" viewBox="0 0 20.557 20.557">
+						<svg
+							class="close-icon hidden"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20.557"
+							height="20.557"
+							viewBox="0 0 20.557 20.557"
+						>
 							<g id="close" transform="translate(-2.722 -57.746)">
-								<path id="Path_501" data-name="Path 501" d="M24.375,206.161H1.625a1.538,1.538,0,1,1,0-3.071h22.75a1.538,1.538,0,1,1,0,3.071Z" transform="translate(148.5 -85.861) rotate(45)" fill="#423f44"/>
-								<path id="Path_503" data-name="Path 503" d="M24.375,0H1.625A1.582,1.582,0,0,0,0,1.536,1.582,1.582,0,0,0,1.625,3.071h22.75A1.582,1.582,0,0,0,26,1.536,1.582,1.582,0,0,0,24.375,0Z" transform="translate(23.279 59.917) rotate(135)" fill="#423f44"/>
+								<path
+									id="Path_501"
+									data-name="Path 501"
+									d="M24.375,206.161H1.625a1.538,1.538,0,1,1,0-3.071h22.75a1.538,1.538,0,1,1,0,3.071Z"
+									transform="translate(148.5 -85.861) rotate(45)"
+									fill="#423f44"
+								/>
+								<path
+									id="Path_503"
+									data-name="Path 503"
+									d="M24.375,0H1.625A1.582,1.582,0,0,0,0,1.536,1.582,1.582,0,0,0,1.625,3.071h22.75A1.582,1.582,0,0,0,26,1.536,1.582,1.582,0,0,0,24.375,0Z"
+									transform="translate(23.279 59.917) rotate(135)"
+									fill="#423f44"
+								/>
 							</g>
 						</svg>
 					</button>
 
 					<div class="w-full md:w-auto">
-						<img class="m-auto md:m-0" src="./assets/logo.png" alt="" />
+						<img
+							class="m-auto md:m-0"
+							src="./assets/logo.png"
+							alt=""
+						/>
 					</div>
-					<div class="hidden md:block" >
+					<div class="hidden md:block">
 						<ul class="flex items-center gap-[50px]">
 							<li class="font-semibold">
 								<a href="#">Benefits</a>
@@ -51,25 +99,29 @@
 			</div>
 
 			<!-- Nav Menu (Mobile Version) -->
-			<div class="nav w-screen h-screen bg-white fixed transition-all -translate-x-full " >
-				<ul class="flex flex-col uppercase transition-all w-full left-0 ">
-					<li class="font-semibold py-[16px] px-[20px] ">
+			<div
+				class="nav w-screen h-screen bg-white fixed transition-all -translate-x-full"
+			>
+				<ul
+					class="flex flex-col uppercase transition-all w-full left-0"
+				>
+					<li class="font-semibold py-[16px] px-[20px]">
 						<a href="#">Benefits</a>
 					</li>
-					<li class="font-semibold py-[16px] px-[20px] ">
+					<li class="font-semibold py-[16px] px-[20px]">
 						<a href="#">3 Steps</a>
 					</li>
-					<li class="font-semibold py-[16px] px-[20px] "><a href="#">Promo</a></li>
-					<li class="font-semibold py-[16px] px-[20px] bg-[#F3BD43] ">
+					<li class="font-semibold py-[16px] px-[20px]">
+						<a href="#">Promo</a>
+					</li>
+					<li class="font-semibold py-[16px] px-[20px] bg-[#F3BD43]">
 						<a class="uppercase" href="#">Pre-Order Now</a>
 					</li>
 				</ul>
 			</div>
 		</header>
-		<div
-			class="flex justify-center items-center font-semibold h-[50px] bg-[#423D5D]"
-		>
-			<span class="text-white">
+		<div class="font-semibold py-[16px] bg-[#423D5D] block">
+			<span class="text-white text-center block">
 				<a class="underline" href="#"> Sign up </a>
 				TODAY for exclusive beta test access!
 			</span>
@@ -78,13 +130,13 @@
 		<!-- Hero Section -->
 		<section class="bg-hero mb-[70px]">
 			<div class="gutter relative">
-				<div class="flex flex-col gap-[10px] py-[121px]">
-					<h1 class="heading">
+				<div class="flex flex-col gap-[10px] md:py-[121px] pt-[50px]">
+					<h1 class="heading md:text-start text-center">
 						WE SOLVED THE <br />
 						ENERGY CRISIS
 					</h1>
 					<span
-						class="text-[24px] text-white italic font-bold font-poppins leading-[34x]"
+						class="text-center md:text-start text-[24px] text-white italic font-bold font-poppins leading-[34x]"
 					>
 						Your 24/7 personal energy <br />
 						management system
@@ -92,14 +144,14 @@
 				</div>
 
 				<img
-					class="absolute top-0 right-0 translate-y-[50px]"
+					class="mx-auto md:mx-0 md:absolute md:top-0 md:right-0 translate-y-[50px]"
 					src="./assets/gem-phone-dashboard.png"
 					alt=""
 				/>
 			</div>
 		</section>
 
-		<section class="gutter relative text-[24px] text-center">
+		<section class="gutter relative md:text-[24px] text-[20px] text-center">
 			<p class="mb-[40px] mt-[130px]">
 				You can’t pour from an empty cup. GEM helps fill you up.
 			</p>
@@ -110,7 +162,10 @@
 				help restore your energy, master your emotions, and unleash You.
 			</p>
 
-			<a href="#" class="button mt-[30px] mb-[66px] inline-block">
+			<a
+				href="#"
+				class="button md:w-auto w-full mt-[30px] mb-[66px] inline-block"
+			>
 				Pre-Order Now
 			</a>
 		</section>
@@ -118,7 +173,7 @@
 		<!-- Section 3 -->
 
 		<section class="bg3section">
-			<div class="max-w-[1090px] mx-auto">
+			<div class="max-w-[1040px] px-[20px ] mx-auto">
 				<div>
 					<h1 class="heading text-center pt-[70px]">
 						ONE DEVICE. <br />
@@ -130,8 +185,9 @@
 						throughout the day.</span
 					>
 				</div>
+				<!-- Desktop Cards - Starts -->
 				<div
-					class="grid grid-cols-3 grid-rows-2 gap-x-[20px] gap-y-[30px]"
+					class="md:grid hidden grid-cols-3 grid-rows-2 gap-x-[20px] gap-y-[30px]"
 				>
 					<!-- Card 1 -->
 					<div
@@ -412,6 +468,51 @@
 						>
 					</div>
 				</div>
+				<!-- Desktop Cards - Ends -->
+				<!-- ================ -->
+				<!-- Mobile Cards ( Swiper)  - Starts -->
+				<!-- Slider main container -->
+				<div class="swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<!-- Card inside Slide - Start -->
+							<div
+								class="bg-[#423D5D] rounded-[10px] bg-opacity-75 flex justify-center items-center flex-col gap-[20px] py-[20px] px-[20px]"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="40"
+									height="50"
+									viewBox="0 0 40 50"
+								>
+									<path
+										id="Path_478"
+										data-name="Path 478"
+										d="M23,52a1.9,1.9,0,0,1-2-1.786V32.357H8A2.042,2.042,0,0,1,6.227,31.4a1.626,1.626,0,0,1,.135-1.848l21-26.786A2.134,2.134,0,0,1,29.6,2.083a1.821,1.821,0,0,1,1.4,1.7V21.643H44a2.042,2.042,0,0,1,1.773.961,1.626,1.626,0,0,1-.135,1.848l-21,26.786A2.08,2.08,0,0,1,23,52ZM11.842,28.786H23a1.9,1.9,0,0,1,2,1.786V44.551L40.159,25.214H29a1.9,1.9,0,0,1-2-1.786V9.45Z"
+										transform="translate(-6.001 -2.001)"
+										fill="#fff"
+									/>
+								</svg>
+								<span
+									class="sub-heading leading-[30px] text-white text-center"
+									>ENJOY GOOD, <br />
+									CLEAN ENERGY</span
+								>
+								<span class="text-[16px] leading-[26px] text-white block text-center" >
+									Unlike caffeine which gives a jolt of energy followed by a crash, GEM assists in balancing your energy without chemicals, toxins, or side effects all day long.
+								</span>
+							</div>
+							<!-- Card inside Slide - End -->
+						</div>
+						...
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<!-- Mobile Cards ( Swiper)  - Ends -->
 				<p class="text-center text-white pt-[50px] pb-[50px]">
 					*This is massively different to stimulants which prevent you
 					from managing your energy throughout the day. Stimulants
@@ -824,33 +925,64 @@
 			</div>
 		</section>
 
-		<section class="bg-[#423D5D]" >
-			<span class="text-white block text-center py-[16px] text-[14px]" >**GEM is not a medical device and is not intended to diagnose or monitor any disease or medical condition.</span>
+		<section class="bg-[#423D5D]">
+			<span class="text-white block text-center py-[16px] text-[14px]"
+				>**GEM is not a medical device and is not intended to diagnose
+				or monitor any disease or medical condition.</span
+			>
 		</section>
 
 		<footer class="bg-[#29263F]">
 			<div class="max-w-[1140px] mx-auto py-[60px]">
 				<div class="flex justify-between items-center">
-						<ul class="text-white ">
-							<li><a href="#" class="mt-[20px] block">Bet a Test Pre-Sale</a></li>
-							<li><a href="#" class="mt-[20px] block">Bet a Test Pre-Sale</a></li>
-							<li><a href="#" class="mt-[20px] block">Bet a Test Pre-Sale</a></li>
-							<li><a href="#" class="mt-[20px] block">Bet a Test Pre-Sale</a></li>
-						</ul>
+					<ul class="text-white">
+						<li>
+							<a href="#" class="mt-[20px] block"
+								>Bet a Test Pre-Sale</a
+							>
+						</li>
+						<li>
+							<a href="#" class="mt-[20px] block"
+								>Bet a Test Pre-Sale</a
+							>
+						</li>
+						<li>
+							<a href="#" class="mt-[20px] block"
+								>Bet a Test Pre-Sale</a
+							>
+						</li>
+						<li>
+							<a href="#" class="mt-[20px] block"
+								>Bet a Test Pre-Sale</a
+							>
+						</li>
+					</ul>
 					<div>
-						<img src="./assets/apple-app-store.png" alt="apple store">
-						<img class="mt-[10px]" src="./assets//google-app-store.png" alt="google store">
+						<img
+							src="./assets/apple-app-store.png"
+							alt="apple store"
+						/>
+						<img
+							class="mt-[10px]"
+							src="./assets//google-app-store.png"
+							alt="google store"
+						/>
 					</div>
 				</div>
 
-				<div class="flex justify-between items-center" > 
-					<span class="font-bold text-white block mt-[50px]">Contact: support@energy4life.com</span>
-					<span class="font-bold text-white block mt-[50px]">Copyright © 2022 Energy4Life All Rights Reserved</span>
+				<div class="flex justify-between items-center">
+					<span class="font-bold text-white block mt-[50px]"
+						>Contact: support@energy4life.com</span
+					>
+					<span class="font-bold text-white block mt-[50px]"
+						>Copyright © 2022 Energy4Life All Rights Reserved</span
+					>
 				</div>
-
 			</div>
 		</footer>
 		<!-- scripts  -->
+		<!-- <script src="./assets/swiper/swiper-bundle.min.css"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 		<script src="./script.js"></script>
 	</body>
 </html>
