@@ -675,6 +675,14 @@ video {
   margin-bottom: 10px;
 }
 
+.mb-\[20px\]{
+  margin-bottom: 20px;
+}
+
+.mb-\[58px\]{
+  margin-bottom: 58px;
+}
+
 .mt-\[20px\]{
   margin-top: 20px;
 }
@@ -715,6 +723,10 @@ video {
   margin-top: 50px;
 }
 
+.mb-0{
+  margin-bottom: 0px;
+}
+
 .block{
   display: block;
 }
@@ -743,12 +755,20 @@ video {
   height: 100vh;
 }
 
+.h-\[350px\]{
+  height: 350px;
+}
+
 .h-\[40px\]{
   height: 40px;
 }
 
 .h-\[2px\]{
   height: 2px;
+}
+
+.h-\[500px\]{
+  height: 500px;
 }
 
 .h-fit{
@@ -847,8 +867,51 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-x-\[100px\]{
+  --tw-translate-x: 100px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[130px\]{
+  --tw-translate-x: 130px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[115px\]{
+  --tw-translate-x: 115px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[10\]{
+  --tw-translate-x: 10;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[10\%\]{
+  --tw-translate-x: 10%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[18\%\]{
+  --tw-translate-x: 18%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[18\%\]{
+  --tw-translate-x: -18%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.resize-none{
+  resize: none;
+}
+
+.resize{
+  resize: both;
 }
 
 .grid-cols-3{
@@ -859,8 +922,16 @@ video {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row{
+  flex-direction: row;
+}
+
 .flex-col{
   flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .items-center{
@@ -887,6 +958,10 @@ video {
   gap: 20px;
 }
 
+.gap-\[30px\]{
+  gap: 30px;
+}
+
 .gap-\[80px\]{
   gap: 80px;
 }
@@ -895,8 +970,8 @@ video {
   gap: 100px;
 }
 
-.gap-\[30px\]{
-  gap: 30px;
+.gap-\[\]{
+  gap: ;
 }
 
 .gap-x-\[20px\]{
@@ -1014,6 +1089,11 @@ video {
   padding-bottom: 20px;
 }
 
+.px-\[30px\]{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .py-\[30px\]{
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1027,11 +1107,6 @@ video {
 .px-\[50px\]{
   padding-left: 50px;
   padding-right: 50px;
-}
-
-.px-\[30px\]{
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .py-\[19px\]{
@@ -1049,9 +1124,9 @@ video {
   padding-bottom: 60px;
 }
 
-.py-\[30\]{
-  padding-top: 30;
-  padding-bottom: 30;
+.py-\[\]{
+  padding-top: ;
+  padding-bottom: ;
 }
 
 .pt-\[50px\]{
@@ -1068,6 +1143,10 @@ video {
 
 .pb-\[50px\]{
   padding-bottom: 50px;
+}
+
+.pt-\[30px\]{
+  padding-top: 30px;
 }
 
 .pt-\[100px\]{
@@ -1195,12 +1274,18 @@ body {
 
 .heading{
   font-family: Poppins, sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 60px;
   --tw-text-opacity: 1;
   color: rgb(243 189 67 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px){
+  .heading{
+    font-size: 50px;
+  }
 }
 
 .sub-heading{
@@ -1312,6 +1397,78 @@ body {
   color: rgb(66 63 68 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px){
+  .sm\:mb-\[20px\]{
+    margin-bottom: 20px;
+  }
+
+  .sm\:block{
+    display: block;
+  }
+
+  .sm\:inline-block{
+    display: inline-block;
+  }
+
+  .sm\:hidden{
+    display: none;
+  }
+
+  .sm\:h-\[250px\]{
+    height: 250px;
+  }
+
+  .sm\:translate-x-\[18\%\]{
+    --tw-translate-x: 18%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .sm\:translate-x-0{
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .sm\:flex-row{
+    flex-direction: row;
+  }
+
+  .sm\:flex-wrap{
+    flex-wrap: wrap;
+  }
+
+  .sm\:items-end{
+    align-items: flex-end;
+  }
+
+  .sm\:gap-\[80px\]{
+    gap: 80px;
+  }
+
+  .sm\:py-\[108px\]{
+    padding-top: 108px;
+    padding-bottom: 108px;
+  }
+
+  .sm\:py-\[\]{
+    padding-top: ;
+    padding-bottom: ;
+  }
+
+  .sm\:py-\[80\]{
+    padding-top: 80;
+    padding-bottom: 80;
+  }
+
+  .sm\:py-\[80px\]{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .sm\:text-start{
+    text-align: start;
+  }
+}
+
 @media (min-width: 840px){
   .md\:absolute{
     position: absolute;
@@ -1334,6 +1491,10 @@ body {
     margin-right: 0px;
   }
 
+  .md\:mb-\[50px\]{
+    margin-bottom: 50px;
+  }
+
   .md\:block{
     display: block;
   }
@@ -1346,13 +1507,50 @@ body {
     display: none;
   }
 
+  .md\:h-auto{
+    height: auto;
+  }
+
   .md\:w-auto{
     width: auto;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:flex-col{
+    flex-direction: column;
+  }
+
+  .md\:items-start{
+    align-items: flex-start;
+  }
+
+  .md\:items-center{
+    align-items: center;
+  }
+
+  .md\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .md\:gap-\[80px\]{
+    gap: 80px;
   }
 
   .md\:py-\[121px\]{
     padding-top: 121px;
     padding-bottom: 121px;
+  }
+
+  .md\:py-\[108px\]{
+    padding-top: 108px;
+    padding-bottom: 108px;
+  }
+
+  .md\:pt-\[100px\]{
+    padding-top: 100px;
   }
 
   .md\:text-start{

@@ -28,7 +28,7 @@ body {
 }
 
 .heading {
-	@apply text-[50px] text-primary font-poppins font-bold leading-[60px] uppercase;
+	@apply sm:text-[50px] text-[40px] text-primary font-poppins font-bold leading-[60px] uppercase;
 }
 
 .sub-heading {
