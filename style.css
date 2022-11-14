@@ -807,10 +807,6 @@ video {
   width: 200px;
 }
 
-.w-\[400px\]{
-  width: 400px;
-}
-
 .max-w-\[1040px\]{
   max-width: 1040px;
 }
@@ -831,8 +827,12 @@ video {
   max-width: 600px;
 }
 
-.max-w-\[700px\]{
-  max-width: 700px;
+.max-w-\[680px\]{
+  max-width: 680px;
+}
+
+.max-w-\[1060px\]{
+  max-width: 1060px;
 }
 
 .max-w-\[1100px\]{
@@ -841,10 +841,6 @@ video {
 
 .max-w-\[1140px\]{
   max-width: 1140px;
-}
-
-.max-w-\[680px\]{
-  max-width: 680px;
 }
 
 .flex-1{
@@ -978,45 +974,9 @@ video {
   border-radius: 30px;
 }
 
-.rounded{
-  border-radius: 0.25rem;
-}
-
-.rounded-t{
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-}
-
 .rounded-t-\[10px\]{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-}
-
-.rounded-l{
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-}
-
-.rounded-l-\[1\]{
-  border-top-left-radius: 1;
-  border-bottom-left-radius: 1;
-}
-
-.rounded-l-\[10px\]{
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.rounded-bl{
-  border-bottom-left-radius: 0.25rem;
-}
-
-.rounded-bl-\[\]{
-  border-bottom-left-radius: ;
-}
-
-.rounded-bl-\[10px\]{
-  border-bottom-left-radius: 10px;
 }
 
 .border{
@@ -1120,11 +1080,6 @@ video {
   padding-bottom: 60px;
 }
 
-.px-\[50px\]{
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
 .py-\[19px\]{
   padding-top: 19px;
   padding-bottom: 19px;
@@ -1189,6 +1144,14 @@ video {
 
 .text-\[50px\]{
   font-size: 50px;
+}
+
+.text-\[40px\]{
+  font-size: 40px;
+}
+
+.text-\[30px\]{
+  font-size: 30px;
 }
 
 .text-\[14px\]{
@@ -1345,6 +1308,8 @@ body {
 .bg-form{
   background: url("../assets/bg.png");
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .shown .menu-icon{
@@ -1425,12 +1390,10 @@ body {
     height: 250px;
   }
 
-  .sm\:w-\[400px\]{
-    width: 400px;
-  }
-
-  .sm\:w-auto{
-    width: auto;
+  .sm\:w-fit{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .sm\:translate-x-0{
@@ -1464,8 +1427,17 @@ body {
     padding-bottom: 80px;
   }
 
+  .sm\:px-\[50px\]{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .sm\:text-start{
     text-align: start;
+  }
+
+  .sm\:text-\[50px\]{
+    font-size: 50px;
   }
 }
 
@@ -1552,11 +1524,6 @@ body {
     gap: 0px;
   }
 
-  .md\:rounded-l-\[10px\]{
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
-
   .md\:py-\[121px\]{
     padding-top: 121px;
     padding-bottom: 121px;
@@ -1577,5 +1544,11 @@ body {
 
   .md\:text-\[24px\]{
     font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:flex-row{
+    flex-direction: row;
   }
 }
