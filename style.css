@@ -639,6 +639,16 @@ video {
   margin-bottom: 50px;
 }
 
+.my-\[\]{
+  margin-top: ;
+  margin-bottom: ;
+}
+
+.my-\[54px\]{
+  margin-top: 54px;
+  margin-bottom: 54px;
+}
+
 .mb-\[70px\]{
   margin-bottom: 70px;
 }
@@ -721,6 +731,14 @@ video {
 
 .mt-\[50px\]{
   margin-top: 50px;
+}
+
+.mb-\[\]{
+  margin-bottom: ;
+}
+
+.mb-\[54px\]{
+  margin-bottom: 54px;
 }
 
 .block{
@@ -841,6 +859,14 @@ video {
 
 .max-w-\[1140px\]{
   max-width: 1140px;
+}
+
+.max-w-\[100px\]{
+  max-width: 100px;
+}
+
+.max-w-\[1000px\]{
+  max-width: 1000px;
 }
 
 .flex-1{
@@ -1088,6 +1114,21 @@ video {
 .px-\[53px\]{
   padding-left: 53px;
   padding-right: 53px;
+}
+
+.px-\[\]{
+  padding-left: ;
+  padding-right: ;
+}
+
+.px-\[5-\]{
+  padding-left: 5-;
+  padding-right: 5-;
+}
+
+.px-\[50px\]{
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .pt-\[50px\]{
@@ -1370,6 +1411,11 @@ body {
 }
 
 @media (min-width: 640px){
+  .sm\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .sm\:mb-\[20px\]{
     margin-bottom: 20px;
   }
