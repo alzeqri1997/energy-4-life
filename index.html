@@ -686,14 +686,34 @@
 						alt=" happy girl stands with open arms against sun raise" />
 					<div
 						class="flex w-[200px] md:mx-0 mx-auto transition-all items-center max-w-[200px] h-[50px] rounded-[25px] bg-white relative">
-						<button onclick="turnMusic(1)" class="on text-[20px] font-semibold flex-1 z-10">
-							ON
+						<button onclick="turnMusic(1)" class="on-btn flex justify-center items-center gap-[10px] h-full w-full rounded-[23px] text-[20px] font-semibold flex-1 z-10">
+							<svg class="fill-white"  id="sound_medium" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+								<g id="Group_5782" data-name="Group 5782" transform="translate(15.36 2.64)">
+									<path id="Path_598" data-name="Path 598" d="M18.36,19.36a1,1,0,0,1-.7-1.71,7.979,7.979,0,0,0,0-11.3,1,1,0,0,1,1.41-1.419,9.98,9.98,0,0,1,0,14.138,1,1,0,0,1-.7.291Z" transform="translate(-17.36 -4.64)" />
+								</g>
+								<g id="Group_5783" data-name="Group 5783" transform="translate(12.53 5.471)">
+									<path id="Path_599" data-name="Path 599" d="M15.53,16.53a1,1,0,0,1-.7-1.711,3.974,3.974,0,0,0,0-5.638,1,1,0,1,1,1.406-1.422,5.973,5.973,0,0,1,0,8.482A1,1,0,0,1,15.53,16.53Z" transform="translate(-14.53 -7.47)" />
+								</g>
+								<g id="Group_5784" data-name="Group 5784">
+									<path id="Path_600" data-name="Path 600" d="M12,22a1,1,0,0,1-.707-.293L6.586,17H4a2,2,0,0,1-2-2V9A2,2,0,0,1,4,7H6.586l4.707-4.707A1,1,0,0,1,13,3V21a1,1,0,0,1-1,1Z" transform="translate(-2 -2)" />
+								</g>
+							</svg>
+							
+							<span>ON</span>
 						</button>
-						<button onclick="turnMusic(0)" style="color: #fff" class="off text-[20px] font-semibold flex-1 z-10">
+						<button onclick="turnMusic(0)" class="off-btn off text-[#423F44] flex justify-center items-center gap-[10px] h-full w-full rounded-[23px] text-[20px] font-semibold flex-1 z-10">
+							<svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20">
+								<g id="sound_medium" transform="translate(-2 -2)">
+									<g id="Group_5784" data-name="Group 5784">
+										<path id="Path_600" data-name="Path 600" d="M12,22a1,1,0,0,1-.707-.293L6.586,17H4a2,2,0,0,1-2-2V9A2,2,0,0,1,4,7H6.586l4.707-4.707A1,1,0,0,1,13,3V21a1,1,0,0,1-1,1Z" fill="#fff"/>
+									</g>
+								</g>
+							</svg>
+							
 							OFF
 						</button>
-						<div style="width: 50%" class="active h-full transition-all bg-slate-500 absolute rounded-[25px] right-0">
-						</div>
+						<!-- <div style="width: 50%" class="active h-full transition-all bg-slate-500 absolute rounded-[25px] right-0">
+						</div> -->
 					</div>
 				</div>
 				<!-- right section -->

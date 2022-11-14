@@ -1,8 +1,8 @@
 const select = (item) => document.querySelector(item);
 
 const activeButton = select('.active');
-const onButton = select('.on');
-const offButton = select('.off');
+const onButton = select('.on-btn');
+const offButton = select('.off-btn');
 const navMobile = select('.nav');
 const header = select('.header');
 const menuIcon = select('.menu-btn');
@@ -25,13 +25,11 @@ menuClick()
 
 function turnMusic(value) {
   if (value === 1) {
-    activeButton.style.transform = 'translateX(-100px)' 
-    onButton.style.color = '#fff'
-    offButton.style.color = '#423F44'
+    offButton.classList.remove('off');
+    onButton.classList.add('on');
   } else {
-    activeButton.style.transform = 'none'
-    onButton.style.color = '#423F44'
-    offButton.style.color = '#fff'
+    offButton.classList.add('off');
+    onButton.classList.remove('on')
   }
 }
 
