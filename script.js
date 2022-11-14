@@ -13,8 +13,8 @@ const menuBtn = select('.menu-btn');
 
 function menuClick () {
   menuBtn.addEventListener("click", () => {
-    header.classList.add('fixed-position')
-    navMobile.classList.add('fixed-position')
+    header.classList.toggle('fixed-position');
+    navMobile.classList.toggle('fixed-position')
     header.classList.toggle("shown");
     console.log(select('.menu-icon').dataset.isMenuOpen)
   })
