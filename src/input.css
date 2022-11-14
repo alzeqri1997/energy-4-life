@@ -20,11 +20,11 @@ body {
 }
 
 .bg-hero {
-	background: url("../assets/dark.png");
+	background: url("assets/dark.png");
 }
 
 .bg3section {
-	background: url("../assets/bg3section.png");
+	background: url("assets/bg3section.png");
 }
 
 .heading {
@@ -44,17 +44,17 @@ body {
 }
 
 .bg5section {
-	background: url("../assets/cosmic-background-with-colorful-neon-laser-lights-perfect-digital-wallpaper.png");
+	background: url("assets/cosmic-background-with-colorful-neon-laser-lights-perfect-digital-wallpaper.png");
 }
 
 .bg7section {
-	background: url("../assets/bg7section.png");
+	background: url("assets/bg7section.png");
   object-fit: contain;
 	background-size: cover;
 }
 
 .active::before {
-	content: url("../assets/sound_medium.svg");
+	content: url("assets/sound_medium.svg");
 	position: absolute;
 	left: 11%;
 	top: 50%;
@@ -68,7 +68,7 @@ body {
 
 
 .bg-form{
-	background: url("../assets/bg.png");
+	background: url("assets/bg.png");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
